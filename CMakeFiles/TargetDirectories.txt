@@ -1,0 +1,5 @@
+/Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/CMakeFiles/MyQt6App.dir
+/Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/CMakeFiles/edit_cache.dir
+/Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/CMakeFiles/rebuild_cache.dir
+/Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/CMakeFiles/MyQt6App_autogen_timestamp_deps.dir
+/Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/CMakeFiles/MyQt6App_autogen.dir

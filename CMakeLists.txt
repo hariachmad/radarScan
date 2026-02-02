@@ -26,11 +26,14 @@ set(SOURCES
     mainwindow.ui
     qcustomplot.cpp
     qcustomplot.h
+    socketioclient.cpp
+    socketioclient.h
 )
 
 # Generate executable
 qt_add_executable(MyQt6App
     ${SOURCES}
+    radar.h
 )
 
 # Link Qt modules

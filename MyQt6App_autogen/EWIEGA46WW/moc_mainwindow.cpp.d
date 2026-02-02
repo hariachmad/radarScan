@@ -907,6 +907,10 @@
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QFlags \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QHash \
+  /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QJsonArray \
+  /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QJsonDocument \
+  /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QJsonObject \
+  /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QJsonValue \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QMargins \
@@ -932,6 +936,7 @@
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QTimeZone \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QUrl \
+  /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QUrlQuery \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QVariant \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QVector \
   /Users/user/Qt/6.10.1/macos/lib/QtCore.framework/Versions/A/Headers/QtCore \
@@ -1534,4 +1539,6 @@
   /Users/user/Qt/6.10.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
   /Users/user/Qt/6.10.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidgetaction.h \
   /Users/user/Qt/6.10.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qwizard.h \
-  /Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/qcustomplot.h
+  /Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/qcustomplot.h \
+  /Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/radar.h \
+  /Volumes/DATA/qt6pro/radarCap/radarScanSocket/radarscan/radarScan/socketioclient.h

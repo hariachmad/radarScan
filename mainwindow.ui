@@ -6,97 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1037</width>
-    <height>763</height>
+    <width>889</width>
+    <height>545</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Radar Scan V0.1</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QComboBox" name="serialPortInfoListBox">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>0</y>
-      <width>151</width>
-      <height>32</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnLoad">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>0</y>
-      <width>111</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>LOAD</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnOpenSerialPort">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>.AppleSystemUIFont</family>
-     </font>
-    </property>
-    <property name="text">
-     <string>Open</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>190</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>FALL STATE</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="leFallState">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>170</y>
-      <width>101</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 255, 208);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::Box</enum>
-    </property>
-    <property name="text">
-     <string>NOT FALL</string>
-    </property>
-   </widget>
    <widget class="QCustomPlot" name="plottsgram" native="true">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>370</x>
       <y>10</y>
-      <width>511</width>
-      <height>211</height>
+      <width>250</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -110,17 +34,17 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
-      <width>281</width>
-      <height>451</height>
+      <y>10</y>
+      <width>361</width>
+      <height>441</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Specs</string>
+      <string>Specs1</string>
      </attribute>
      <widget class="QPushButton" name="btnGetFallDuration">
       <property name="geometry">
@@ -186,7 +110,7 @@
        <rect>
         <x>120</x>
         <y>270</y>
-        <width>51</width>
+        <width>41</width>
         <height>31</height>
        </rect>
       </property>
@@ -204,7 +128,7 @@
      <widget class="QLineEdit" name="leAngleZInstallation">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>220</x>
         <y>270</y>
         <width>41</width>
         <height>31</height>
@@ -327,9 +251,218 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Specs2</string>
+     </attribute>
+     <widget class="QLineEdit" name="leFirmwareVersion2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetProductModel2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Product Model</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leInitComplete2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>210</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleZInstallation2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>260</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleYInstallation2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>260</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leHWModel2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>110</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leProductModel2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leHeightInstallation2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>310</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCmdInitCompleteCek2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Init Complete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetProductID2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Product ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallDuration2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>360</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leProductID2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetFallDuration2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Fall Duration</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleXInstallation2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnHWModel2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>H/W Model</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetAngleInst2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Angle Inst</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetFirmwareVersion2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Firmware Ver</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGetHeightInst2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Height Inst</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Setting</string>
+      <string>SetR1</string>
      </attribute>
      <widget class="QFrame" name="frame">
       <property name="geometry">
@@ -636,110 +769,841 @@
        </rect>
       </property>
      </widget>
+     <widget class="QComboBox" name="serialPortInfoListBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>131</width>
+        <height>32</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnOpenSerialPort">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>350</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>.AppleSystemUIFont</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Open</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLoad">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>111</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LOAD</string>
+      </property>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>130</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>STAND STILL</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>80</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Motion</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leMotion">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>70</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leStandStill">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>120</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(169, 144, 255);</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leFallPosX">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>310</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>320</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>X</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>350</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Y</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leFallPosY">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>350</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>SetR2</string>
+     </attribute>
+     <widget class="QLineEdit" name="lePresence2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>0</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="cbTraceTracking2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trace Tracking</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnSetHeight2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set Height Inst</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleX2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>260</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="serialPortInfoListBox2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>131</width>
+        <height>32</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleY2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>260</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLoad2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>300</y>
+        <width>111</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LOAD</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leSetHeight2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>160</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallDetection2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSetFallDuration2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set Fall Duration</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leTraceTracking2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>120</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnOpenSerialPort2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>.AppleSystemUIFont</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Open</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>120</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="cbPresence2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>86</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Presence</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="leGetStandStill2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSetAngle2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set Angle</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameFallDetection_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="cbFallDetection2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fall Detection</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frameFallDetection_6">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>120</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="cbStandStill2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>StandStill</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_12">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>120</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QCheckBox" name="cbStandStill_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>StandStill</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="leSetFallDuration2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>210</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leAngleZ2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>260</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>30</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>RunView1</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Motion</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leMotion">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>STAND STILL</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leStandStill">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(169, 144, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FALL STATE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnTestFall">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FALL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="leFallState">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 208);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::Box</enum>
+      </property>
+      <property name="text">
+       <string>NOT FALL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallPosX">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallPosY">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Speed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leVelocity">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trace Number</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leTraceNumber">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>220</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cbSocket">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>86</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Socket</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="logEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>341</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>RunView2</string>
+     </attribute>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trace Number</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Speed</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnTestFall2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FALL</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leTraceNumber2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="logEdit2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>341</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallPosY2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FALL STATE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leVelocity2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>200</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="leFallState2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 208);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::Box</enum>
+      </property>
+      <property name="text">
+       <string>NOT FALL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>STAND STILL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leStandStill2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(169, 144, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leFallPosX2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leMotion2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cbSocket2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>86</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Socket</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Motion</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QCustomPlot" name="plotRadar" native="true">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>400</y>
-      <width>501</width>
-      <height>241</height>
+      <x>370</x>
+      <y>300</y>
+      <width>250</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -747,38 +1611,15 @@
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leTraceNumber">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>430</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>430</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Trace Number</string>
     </property>
    </widget>
    <widget class="QCustomPlot" name="plottsVelocity" native="true">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>220</y>
-      <width>511</width>
-      <height>211</height>
+      <x>370</x>
+      <y>160</y>
+      <width>250</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -788,63 +1629,52 @@
      </sizepolicy>
     </property>
    </widget>
-   <widget class="QLineEdit" name="leVelocity">
+   <widget class="QCustomPlot" name="plottsgram2" native="true">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>390</y>
-      <width>101</width>
-      <height>31</height>
+      <x>620</x>
+      <y>10</y>
+      <width>250</width>
+      <height>150</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QCustomPlot" name="plottsVelocity2" native="true">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>400</y>
-      <width>81</width>
-      <height>16</height>
+      <x>620</x>
+      <y>160</y>
+      <width>250</width>
+      <height>141</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Speed</string>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="logEdit">
+   <widget class="QCustomPlot" name="plotRadar2" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>530</y>
-      <width>481</width>
-      <height>111</height>
+      <x>620</x>
+      <y>300</y>
+      <width>250</width>
+      <height>150</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QPushButton" name="btnTestFall">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>210</y>
-      <width>61</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>FALL</string>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="cbSocket">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>490</y>
-      <width>86</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Socket</string>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
    </widget>
   </widget>
@@ -853,7 +1683,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1037</width>
+     <width>889</width>
      <height>30</height>
     </rect>
    </property>
