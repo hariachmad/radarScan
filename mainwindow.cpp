@@ -967,38 +967,40 @@ void MainWindow::processPayloadSocket()
 
         }else if(eventName == "VOLUME_GET"){
 #ifdef PLATFORM_LINUX
-           int currentVol = getVolumePercent();
-           client->emitEvent3("VOLUME_GET_ACK",QString::number(currentVol));
+            int currentVol = getVolumePercent();
+            client->emitEvent3("VOLUME_GET_ACK",QString::number(currentVol));
 #endif
         }else if(eventName == "VOLUME_SET" && data.isString()){
 #ifdef PLATFORM_LINUX
-            int valSet = data.toString().toInt();
-            if(setVolumePercent(valSet)){
+            int volSet = data.toString().toInt();
+            if(setVolumePercent(volSet)){
                 qDebug() << "Success setVol " << volSet;
             }
 #endif
         }else if(eventName == "PING_DEVICE_UP"){
 #ifdef PLATFORM_LINUX
-            int brightGet = setBrightnessPercent();
+            int brightGet = setBrightnessPercent(80);
             client->emitEvent3("PING_DEVICE_UP_FRONTEND",QString::number(brightGet));
 #endif
         }else if(eventName == "SLEEP"){
 #ifdef PLATFORM_LINUX
             int getBright = getBrightness();
-            client->emitEvent3("SLEEP_FRONTEND",QString::number(brightGet));
+            client->emitEvent3("SLEEP_FRONTEND",QString::number(getBright));
 #endif
         }else if(eventName == "BRIGHTNESS_SET"){
 #ifdef PLATFORM_LINUX
             QString state = data.toString();
             qDebug() << "Brightness Set:" << state;
-            if(setBrightnessPercent(state.toInt()){
-               qDebug() << "Brightness Set " << state;
+            if(setBrightnessPercent(state.toInt())){
+                qDebug() << "Brightness Set " << state;
             }
 #endif
         }
         // tambah event lain di sini
     }
 }
+
+
 
 //---------------------------------------------------------------------------------------
 void MainWindow::writeData(const QByteArray &data)

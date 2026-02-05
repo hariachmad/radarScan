@@ -105,6 +105,9 @@ private:
     bool namespaceConnected = false;
     int m_nextAckId;
 
+    QString m_lastEventName;
+    QJsonValue m_lastEventData;
+
     QString m_host;
     quint16 m_port;
     SocketIOVersion m_version;

@@ -235,7 +235,6 @@ void SocketIOClient::handleSocketIOJsonPacket(int type, const QString &data)
         int subType = subTypeChar.digitValue();
 
         if (subType == 2) { // EVENT
-            // subData harus JSON array: ["EVENT","DATA"]
             QJsonDocument doc = QJsonDocument::fromJson(subData.toUtf8());
             if (!doc.isArray()) {
                 qWarning() << "Invalid event JSON:" << subData;
@@ -260,27 +259,21 @@ void SocketIOClient::handleSocketIOJsonPacket(int type, const QString &data)
                      << "Data:" << dataValue
                      << "AckId:" << ackId;
 
-            QString strValue;
-            int intValue = 0;
+            // ===== DEDUPLICATION LOGIC =====
+            if (eventName == m_lastEventName && dataValue == m_lastEventData) {
+                qDebug() << "Duplicate event skipped:" << eventName << dataValue;
+                return;
+            }
 
-            if (dataValue.isString()) {
-                strValue = dataValue.toString();
-                qDebug() << "Parse Data:" << strValue;
-            }
-            else if (dataValue.isDouble()) {
-                intValue = dataValue.toInt();
-                qDebug() << "Parse Data:" << intValue;
-            }
-            else if (dataValue.isObject()) {
-                QJsonObject obj = dataValue.toObject();
-                qDebug() << "Parse Data:" << obj;
-                // ambil field sesuai kebutuhan
-            }
+            // Update last values
+            m_lastEventName = eventName;
+            m_lastEventData = dataValue;
+            // =================================
 
             handleIncomingEvent(eventName, dataValue.toObject(), ackId);
-            //emit eventReceived(eventName, dataValue.toObject());
             emit eventReceived(eventName, dataValue);
         }
+
         else if (subType == 3) { // ACK
             // Format: 3[ackId,"RESPONSE"]
             QJsonDocument doc = QJsonDocument::fromJson(subData.toUtf8());

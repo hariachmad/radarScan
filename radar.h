@@ -1,7 +1,9 @@
 #ifndef RADAR_H
 #define RADAR_H
 
+#ifndef PLATFORM_LINUX
 #include <QtCore/qtypes.h>
+#endif
 
 #define CMD_GET_PRODUCT_MODEL    QByteArray::fromHex("535902A100010F") //53	59	02	A1	00	01	0F
 #define CMD_GET_PRODUCT_ID       QByteArray::fromHex("535902A200010F") //53	59	02	A2	00	01	0F
